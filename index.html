@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color:chocolate;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .recipe-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recipe-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .recipe-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .recipe-details {
+            flex: 1;
+        }
+        .recipe-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .recipe-ingredients {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 >Indian Recipes</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by name or ingredient..." onkeyup="searchRecipes()">
+        </div>
+        <ul id="recipeList" class="recipe-list">
+            <li class="recipe-item">
+                <img src="https://www.shutterstock.com/image-photo/chole-bhature-north-indian-food-600nw-2238261207.jpg" alt="Chole Bhature" class="recipe-image">
+                <div class="recipe-details">
+                    <div class="recipe-title"><a href="/recipewebsite/cholebhature.html" >CHOLE BHATURE</a></div>
+                    <div class="recipe-ingredients">Ingredients: chickpeas, maida, tomatoes, yogurt, spices, oil</div>
+                </div>
+            </li>
+            <li class="recipe-item">
+                <img src="https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg" alt="Rajma Chawal" class="recipe-image">
+                <div class="recipe-details">
+                    <div class="recipe-title"><a href="/recipewebsite/rajmachawal.html">RAJMA CHAWAL</a></div>
+                    <div class="recipe-ingredients">Ingredients: kidney beans, oil, rice, onions, tomatoes, spices</div>
+                </div>
+            </li>
+            <li class="recipe-item">
+                <img src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji-500x500.jpg" alt="Pav Bhaji" class="recipe-image">
+                <div class="recipe-details">
+                    <div class="recipe-title"><a href="/recipewebsite/pawbhaji.html">PAV BHAJI</a></div>
+                    <div class="recipe-ingredients">Ingredients: mixed vegetables, pav bread, butter, spices</div>
+                </div>
+            </li>
+            <li class="recipe-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLiAyR1OwfYttZy8OausIcZWzWPgqQWq8vmw&s" alt="Sambar Dosa" class="recipe-image">
+                <div class="recipe-details">
+                    <div class="recipe-title"><a href="/recipewebsite/sambardosa.html">SAMBAR-DOSA</a></div>
+                    <div class="recipe-ingredients">Ingredients: rice, urad dal, mixed vegetables lentils, tamarind, spices</div>
+                </div>
+            </li>
+            <li class="recipe-item">
+                <img src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4-500x500.jpg" alt="Aloo Ka Paratha" class="recipe-image">
+                <div class="recipe-details">
+                    <div class="recipe-title"><a href="/recipewebsite/aloo.html">ALOO KA PARATHA</a></div>
+                    <div class="recipe-ingredients">Ingredients: Potato, flour, yogurt, spices, ghee, water</div>
+                   
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
